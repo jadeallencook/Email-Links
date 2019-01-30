@@ -1,0 +1,150 @@
+	/* normalize */
+	html,
+	body {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	h1,
+	h2,
+	h3,
+	p {
+		margin: 0px;
+	}
+
+	input,
+	button {
+		padding: 5px 15px;
+	}
+
+	::-webkit-scrollbar {
+		width: 0px;
+		background: transparent;
+	}
+
+	/* app */
+
+	div#app {
+		padding: 10px;
+		width: 400px;
+		max-height: 750px;
+		overflow-y: scroll;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+
+	/* article */
+
+	div#article {
+		margin: 15px 0px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	div#article div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+		margin-top: 15px;
+	}
+
+	div#article div select,
+	div#article div button {
+		border: solid black thin;
+		border-radius: 3px;
+	}
+
+	div#article div button {
+		background-color: black;
+		color: white;
+	}
+
+	/* sections */
+
+	div#app div#sections {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+	}
+
+	div#app div#sections>h2 {
+		margin-bottom: -10px;
+	}
+
+	div#app div#sections ul#sections-list {
+		list-style: none;
+		margin: 0px 5px;
+		padding: 0px;
+	}
+
+	div#app div#sections ul#sections-list li span.remove {
+		color: red;
+		cursor: pointer;
+		margin-left: 15px;
+	}
+
+	div#app div#sections input,
+	div#app div#sections button {
+		border: solid thin black;
+		border-radius: 3px;
+	}
+
+	div#app div#sections button {
+		border-left: none;
+		background-color: black;
+		color: white;
+	}
+
+	/* alerts */
+
+	div#app div#alerts {
+		box-sizing: border-box;
+		margin: 10px 0px;
+	}
+
+	div#app div#alerts span {
+		display: block;
+		font-weight: 100;
+		margin-top: 5px;
+	}
+
+	/* email */
+
+	div#email h2 {
+		margin-bottom: -15px;
+	}
+
+	div#email div#email-output {
+		margin-top: 15px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	div#email div#email-output p {
+		margin-top: 5px;
+	}
+
+	div#email div#email-options {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+		margin-top: 15px;
+	}
+
+	div#email div#email-options button {
+		background-color: black;
+		color: white;
+		border-radius: 3px;
+		border: solid thin black;
+	}
+
+	div#email div#email-options button#reset-email {
+		background-color: red;
+		border: solid thin red;
+	}
+
+	/* footer */
+
+	div#app span#footer {
+		display: block;
+		margin-top: 15px;
+	}
